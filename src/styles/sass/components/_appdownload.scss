@@ -1,0 +1,85 @@
+.appInstall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26rem 7rem 18rem 7rem;
+  margin-top: -20rem;
+
+  clip-path: $clip-path;
+  position: relative;
+
+  // STYLING LEFT SIDE OF SECTION
+  &__typography {
+    max-width: 35rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-family: "Raleway";
+  }
+
+  // styling buttons and button container
+  &__btnContainer {
+    display: flex;
+  }
+
+  &__btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease;
+    font-size: $fs-normal;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &--1 {
+      background-color: $primary-dark-gray;
+      color: $btn-text-white;
+    }
+
+    &--2 {
+      background-color: $primary-dark-gray;
+      color: $btn-text-white;
+    }
+
+    // styling p tags in span element
+    span {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__p-top {
+    font-weight: 400;
+    font-family: "Raleway";
+  }
+  &__p-bottom {
+    font-weight: 600;
+  }
+
+  // styling right side of section
+  &__imgContainer {
+    max-width: 25rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}

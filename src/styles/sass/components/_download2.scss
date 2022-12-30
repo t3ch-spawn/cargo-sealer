@@ -1,0 +1,97 @@
+.download2 {
+  position: relative;
+  background-color: $btn-text-white;
+  @include sectionSpacing;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: $primary-dark-gray;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 2.8rem;
+
+    span {
+      color: $primary-green;
+    }
+  }
+
+  &__para {
+    color: $nav-gray;
+    font-size: $fs-normal;
+  }
+
+  &__imgContainer {
+    max-width: 28rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // styling div housing left side of section
+  &__typography {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // spacing items in typography
+    & > *:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  // styling input group
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2rem;
+    width: 90% !important;
+  }
+
+  &__input {
+    width: 100%;
+    background: $btn-text-white;
+    height: 2.5rem;
+    padding: 0 2rem;
+    padding-left: 3rem;
+    border: 2px solid #e8e9e8;
+    border-radius: 0.5rem;
+
+    /* Chrome, Safari, Edge, Opera arrow fix*/
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:focus {
+      outline: none;
+      // border: none;
+    }
+  }
+
+  /* Firefox arrow fix*/
+  &__input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  &__label {
+    position: absolute;
+    top: -1.8rem;
+    color: $primary-dark-gray;
+    font-weight: 600;
+    font-style: 0.9rem;
+    left: 0.5rem;
+  }
+
+  @include green-btn;
+}

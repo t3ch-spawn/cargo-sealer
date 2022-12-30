@@ -1,0 +1,40 @@
+@mixin animBtnGray {
+  &:hover {
+    background-color: $primary-dark-gray;
+    color: $btn-text-white;
+  }
+}
+
+@mixin animBtnGreen {
+  &:hover {
+    background-color: $primary-green;
+  }
+}
+
+@mixin sectionSpacing {
+  margin-top: -20rem;
+  padding: 26rem 7rem 20rem 7rem;
+  clip-path: $clip-path;
+  min-height: 100vh;
+}
+
+@mixin green-btn {
+  &__cta {
+    font-size: $fs-normal;
+    display: flex;
+    text-align: center;
+  }
+
+  &__cta-link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: $btn-text-white;
+    background-color: $button-green;
+    padding: 0.6rem 2.5rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+
+    @include animBtnGreen;
+  }
+}

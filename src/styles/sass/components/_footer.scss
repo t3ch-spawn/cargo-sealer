@@ -1,0 +1,83 @@
+.footer {
+  background-color: $primary-dark-gray;
+  padding: 28rem 4rem 10rem 4rem;
+  margin-top: -20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    img {
+      margin-bottom: 1.3rem;
+    }
+
+    p {
+      color: $btn-text-white;
+    }
+
+    small {
+      color: $footer-text-gray;
+    }
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    // spacing the three lists
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+
+    // spacing the footer items
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__item {
+    font-family: "Raleway";
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $fs-normal;
+
+    // spacing arrow and word
+    & > *:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    a {
+      color: $footer-text-gray;
+    }
+
+    &--big {
+      font-size: 1.4rem;
+      margin-bottom: 1.4rem !important;
+      a {
+        color: $btn-text-white;
+      }
+    }
+    // styling of arrow icon
+    img {
+      transition: 0.3s ease;
+      margin-left: 0.5rem;
+    }
+
+    &:hover img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

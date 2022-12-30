@@ -1,0 +1,92 @@
+// styling the main component
+.three-boxes {
+  position: relative;
+  background-color: $button-gray;
+  @include sectionSpacing;
+  display: flex;
+  margin-top: -15rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    & > :first-child {
+      width: 69%;
+    }
+    & > :nth-child(2) {
+      width: 31%;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  // styling for div housing only 2 boxes
+  &__row--2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    & > * {
+      width: 50%;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__title {
+    color: $primary-dark-gray;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+// styling each white box
+.box-helper {
+  background-color: $btn-text-white;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1.3rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // styling boxes in shop section
+  &--2 {
+    background-color: $button-gray;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 0.6rem;
+  }
+
+  &__title {
+    color: $primary-green;
+    font-weight: 600;
+    font-family: "Raleway";
+  }
+
+  &__para {
+    color: $nav-gray;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+}

@@ -1,0 +1,200 @@
+.home {
+}
+
+// HERO OF BODY
+.home-hero {
+  position: relative;
+  padding: 5rem 7rem 0rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: $btn-text-white;
+  clip-path: $clip-path;
+  padding-bottom: 15rem;
+
+  z-index: 7;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Raleway";
+  }
+
+  // styling buttons
+  &__btnContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: $fs-normal;
+    transition: 0.5s ease;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &--1 {
+      background-color: $button-green;
+      color: $btn-text-white;
+
+      @include animBtnGreen;
+    }
+
+    &--2 {
+      background-color: $button-gray;
+      color: $primary-dark-gray;
+      font-weight: 600;
+      font-size: $fs-normal;
+
+      @include animBtnGray;
+    }
+  }
+
+  &__img {
+    margin-top: 3rem;
+  }
+}
+
+// MAIN PART OF BODY
+.homeBody {
+  position: relative;
+  z-index: 6;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  padding: 26rem 7rem 18rem 7rem;
+  clip-path: $clip-path;
+  margin-top: -20rem;
+
+  &__normal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 1rem 8rem;
+
+    .section__btn--2 {
+      display: none;
+    }
+  }
+
+  &__reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 1rem 8rem;
+    flex-direction: row-reverse;
+  }
+
+  &__imgContainer {
+    max-width: 25rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // styling div housing left side of section
+  &__typography {
+    max-width: 35rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $primary-green;
+    font-weight: 600;
+    font-size: $fs-normal;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    color: $primary-dark-gray;
+    font-family: "Raleway";
+  }
+
+  // stylilng main paragraph
+  &__para {
+    line-height: 24px;
+    font-size: $fs-normal;
+    font-weight: 400;
+    color: $nav-gray;
+  }
+
+  // styling little bullets of paragphs with icons beside them
+  &__item-para {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    color: $nav-gray;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+
+  // styling buttons
+  &__btnContainer {
+    display: flex;
+  }
+
+  &__btn {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: $fs-normal;
+    transition: 0.5s ease;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &--1 {
+      background-color: $button-green;
+      color: $btn-text-white;
+
+      @include animBtnGreen;
+    }
+
+    &--2 {
+      background-color: $button-gray;
+      color: $primary-dark-gray;
+      font-weight: 600;
+
+      @include animBtnGray;
+    }
+  }
+}

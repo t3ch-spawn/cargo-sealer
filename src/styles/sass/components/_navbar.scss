@@ -1,0 +1,78 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: $nav-background;
+  border-bottom: 1px solid #a4ca94;
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  -moz-backdrop-filter: blur(28px);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100%;
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__item {
+    font-size: 1.3rem;
+    color: $nav-gray;
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+
+    // styling of arrow icon
+    img {
+      transition: 0.3s ease;
+      margin-left: 0.5rem;
+    }
+
+    &:hover img {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__cta {
+    font-size: $fs-normal;
+    display: flex;
+    text-align: center;
+  }
+
+  &__cta__link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: $btn-text-white;
+    background-color: $button-green;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+
+    @include animBtnGreen;
+  }
+
+  // styling of drop downs of nav items
+  &__dropDown {
+    position: absolute;
+    background-color: $nav-background;
+    width: 100%;
+    height: 0rem;
+  }
+
+  // drop down animation
+  &__item:hover &__dropDown {
+    height: 20rem;
+  }
+}
