@@ -1,0 +1,232 @@
+@media screen and (max-width: 1000px) {
+  // adjusting size of overall page at 1000px mark
+  html {
+    font-size: calc(45.2% + 0.390625vw);
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  // adjusting ThreeBoxes component
+  .three-boxes {
+    &__row {
+      flex-direction: column;
+
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 0rem;
+      }
+
+      & > * {
+        width: 100%;
+      }
+
+      & > :nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  // implementing hamburger menu
+
+  .navigation {
+    padding: 1rem 3rem;
+    background-color: $nav-background;
+    border-bottom: 1px solid #a4ca94;
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    -moz-backdrop-filter: blur(28px);
+    height: 7.5rem;
+  }
+
+  .nav {
+    height: 100vh;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.8s ease;
+    padding-left: 10rem;
+    background-color: #fff;
+
+    // putting in new icon
+    &__icon--mobile {
+      display: block;
+      position: relative;
+      z-index: 30;
+    }
+
+    // removing old icon
+    &__icon {
+      display: none;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+
+      // spacing list items
+      & > *:not(:last-child) {
+        margin-bottom: 3.7rem;
+        margin-right: 0rem;
+      }
+    }
+
+    &__item {
+      overflow: hidden;
+    }
+
+    &__link,
+    &__item img {
+      font-size: 2rem;
+      transform: translateY(3rem);
+      transition: all 0.5s ease !important;
+    }
+
+    &__cta {
+      margin-top: 4rem;
+      transform: translateX(-30rem);
+      transition: 0.7s $ease-back;
+      opacity: 0;
+    }
+
+    &__cta-link {
+      font-size: 2rem;
+      width: 20rem;
+    }
+
+    &__button {
+      position: absolute;
+      top: 3.8rem;
+      right: 3rem;
+      z-index: 30;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    // FUNCTIONALITY OF HAMBURGER MENU
+
+    &__checkbox:checked ~ .nav {
+      opacity: 1;
+      pointer-events: all;
+      width: 100%;
+    }
+
+    // FUNCTIONALITY OF ANIMATION OF NAV LINKS AND BUTTON
+    &__checkbox:checked ~ .nav &__link,
+    &__checkbox:checked ~ .nav &__item img {
+      transform: translateY(0rem);
+      transition-delay: 0.5s !important;
+    }
+
+    &__checkbox:checked ~ .nav &__cta {
+      transform: translateX(0rem);
+      transition-delay: 0.8s !important;
+      opacity: 1;
+    }
+
+    // ICON (three dashes of the hamburger menu)
+    &__burger {
+      position: relative;
+
+      &,
+      &::after,
+      &::before {
+        width: 3rem;
+        height: 2px;
+        background-color: $nav-gray;
+        display: inline-block;
+        transition: 0.2s ease-out;
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    &__button:hover &__burger::before {
+      top: -1rem;
+    }
+
+    &__button:hover &__burger::after {
+      top: 1rem;
+    }
+
+    // Functionality changing the hamburger to an X
+    &__checkbox:checked ~ &__button &__burger {
+      background-color: transparent;
+
+      &::before {
+        transform: rotate(135deg);
+        top: 0;
+      }
+
+      &::after {
+        transform: rotate(-135deg);
+        top: 0;
+      }
+    }
+  }
+
+  // removing button hover effect
+}
+
+@media screen and (max-width: 700px) {
+  // adjusting footer
+
+  .footer {
+    flex-direction: column;
+
+    // spacing 2 divs in footer
+    & > *:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &__left {
+      text-align: center;
+    }
+
+    &__right {
+      flex-direction: column;
+    }
+
+    &__list {
+      align-items: center;
+
+      // removing spacing in the three lists
+      &:not(:last-child) {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+      }
+
+      // respacing the footer items
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -2,6 +2,7 @@
   position: relative;
   background-color: $btn-text-white;
   @include sectionSpacing;
+  margin-top: 0rem !important;
   padding-left: 5rem;
   padding-right: 5rem;
   width: 100%;
@@ -41,7 +42,7 @@
 
   // styling div housing left side of section
   &__typography {
-    max-width: 30rem;
+    max-width: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

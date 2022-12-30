@@ -18,6 +18,10 @@
   padding: 26rem 7rem 20rem 7rem;
   clip-path: $clip-path3;
   min-height: 100vh;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: -23rem;
+  }
 }
 
 @mixin green-btn {

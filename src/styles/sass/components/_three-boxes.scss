@@ -19,7 +19,7 @@
     align-items: center;
 
     & > :first-child {
-      width: 69%;
+      // width: 69%;
     }
     & > :nth-child(2) {
       width: 31%;
@@ -33,9 +33,9 @@
   // styling for div housing only 2 boxes
   &__row--2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    // width: 100%;
 
     & > * {
       width: 50%;
