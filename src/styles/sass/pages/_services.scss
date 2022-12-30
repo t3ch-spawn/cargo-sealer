@@ -62,9 +62,9 @@
     }
   }
 
-  &__title {
+  &__subtitle {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: $fs-medium;
     color: $primary-dark-gray;
     font-family: "Raleway";
   }

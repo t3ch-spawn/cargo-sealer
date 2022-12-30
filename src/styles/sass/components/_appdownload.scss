@@ -28,6 +28,11 @@
   &__title {
     font-weight: 600;
     font-family: "Raleway";
+    font-size: $fs-medium;
+  }
+
+  &__para {
+    font-size: $fs-normal;
   }
 
   // styling buttons and button container
@@ -45,7 +50,7 @@
     align-items: center;
     text-align: center;
     transition: 0.5s ease;
-    font-size: $fs-normal;
+    font-size: 1.1rem;
 
     &:not(:last-child) {
       margin-right: 2rem;

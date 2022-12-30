@@ -14,6 +14,11 @@
   clip-path: $clip-path2;
   padding-bottom: 15rem;
 
+  @include mediacheck;
+  @media (max-width: 1000px) {
+    margin-top: 0rem;
+  }
+
   z-index: 7;
 
   & > *:not(:last-child) {
@@ -29,6 +34,7 @@
 
   &__para {
     text-align: center;
+    font-size: $fs-normal;
   }
 
   // styling buttons
@@ -153,7 +159,7 @@
 
   &__subtitle {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: $fs-medium;
     color: $primary-dark-gray;
     font-family: "Raleway";
   }
@@ -171,7 +177,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1rem;
+    font-size: $fs-normal;
     color: $nav-gray;
 
     &:not(:last-child) {

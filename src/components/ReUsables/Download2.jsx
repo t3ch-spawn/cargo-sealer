@@ -41,7 +41,7 @@ function Download2({
           {titlepart1} <span>{titlepart2}</span> {titlepart3}
         </h1>
 
-        <p className="download2_para">{para}</p>
+        <p className="download2__para">{para}</p>
         <div className="download2__input-group">
           <input
             ref={ref}

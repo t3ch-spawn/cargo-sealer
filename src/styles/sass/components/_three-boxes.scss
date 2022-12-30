@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  @include mediacheck;
 
   &__row {
     display: flex;
@@ -82,11 +83,13 @@
     color: $primary-green;
     font-weight: 600;
     font-family: "Raleway";
+    font-size: 1.3rem;
   }
 
   &__para {
     color: $nav-gray;
     font-weight: 400;
+    font-size: 1.2rem;
     line-height: 1.4rem;
   }
 }

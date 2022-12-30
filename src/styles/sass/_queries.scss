@@ -1,7 +1,7 @@
 @media screen and (max-width: 1000px) {
   // adjusting size of overall page at 1000px mark
   html {
-    font-size: calc(50.2% + 0.390625vw);
+    font-size: calc(52.2% + 0.390625vw);
     scroll-behavior: smooth;
   }
 
@@ -109,6 +109,37 @@
     }
     &__para {
       text-align: center;
+    }
+  }
+
+  // STACKING SERVICES
+  .servicesMain {
+    flex-direction: column;
+
+    &__normal {
+      & > *:not(:last-child) {
+        margin-right: 0rem;
+      }
+    }
+
+    &__reverse {
+      & > *:not(:first-child) {
+        margin-right: 0rem;
+      }
+    }
+
+    &__typography {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__cta {
+      align-self: center;
+    }
+
+    &__cta-link {
+      width: 100%;
     }
   }
 }
@@ -297,6 +328,29 @@
     }
   }
 
+  // STACKING APP DOWNLOAD (2)
+  .download2 {
+    flex-direction: column;
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+    }
+
+    &__typography {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__input-group {
+      align-self: flex-start;
+    }
+    &__cta {
+      align-self: flex-start;
+    }
+  }
+
   // ADJUSTING FOOTER
   .footer {
     flex-direction: column;
@@ -332,5 +386,46 @@
     &__link {
       font-size: 1.4rem;
     }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  // STACKING THREE BOXES
+  .three-boxes {
+    &__row--2 {
+      flex-direction: column;
+
+      & > * {
+        width: 100%;
+      }
+
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 0rem;
+      }
+    }
+  }
+
+  .box-helper {
+    padding: 1.5rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 1.4rem !important;
+    }
+
+    &__para {
+      font-size: $fs-normal !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: calc(65.2% + 0.390625vw);
   }
 }

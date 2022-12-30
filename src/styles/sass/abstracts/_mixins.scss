@@ -50,4 +50,9 @@
     padding-left: 3.5rem !important;
     padding-right: 3.5rem !important;
   }
+
+  @media (max-width: 500px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
