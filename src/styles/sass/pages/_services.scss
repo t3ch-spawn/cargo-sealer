@@ -2,6 +2,13 @@
 .services-body {
   background-color: $button-gray;
   clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+  @media screen and (max-width: 800px) {
+    clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+  }
+  @media screen and (max-width: 500px) {
+    clip-path: polygon(100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
+  }
   padding-top: 10rem;
   padding-bottom: 25rem;
   position: relative;

@@ -26,8 +26,17 @@ html {
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-  min-height: 100vh;
   position: relative;
+}
+@media screen and (max-width: 700px) {
+  .appInstall {
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+}
+@media screen and (max-width: 550px) {
+  .appInstall {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
 }
 @media (max-width: 1000px) {
   .appInstall {
@@ -118,7 +127,7 @@ html {
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-  min-height: 100vh;
+  min-height: initial;
   margin-top: 0rem !important;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -129,6 +138,16 @@ html {
   align-items: center;
   justify-content: center;
   /* Firefox arrow fix*/
+}
+@media screen and (max-width: 700px) {
+  .download2 {
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+}
+@media screen and (max-width: 550px) {
+  .download2 {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
 }
 @media (max-width: 1000px) {
   .download2 {
@@ -162,7 +181,6 @@ html {
 .download2__para {
   color: #4a4e49;
   font-size: 1.2rem;
-  text-align: center;
 }
 .download2__imgContainer {
   max-width: 28rem;
@@ -241,8 +259,17 @@ html {
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-  min-height: 100vh;
   padding-top: 28rem;
+}
+@media screen and (max-width: 700px) {
+  .questions {
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+}
+@media screen and (max-width: 550px) {
+  .questions {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
 }
 .questions__box {
   display: flex;
@@ -288,7 +315,6 @@ html {
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-  min-height: 100vh;
   display: flex;
   margin-top: -15rem;
   padding-left: 4rem;
@@ -297,6 +323,16 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .three-boxes {
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+}
+@media screen and (max-width: 550px) {
+  .three-boxes {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
 }
 @media (max-width: 1000px) {
   .three-boxes {
@@ -573,6 +609,16 @@ html {
   padding-bottom: 15rem;
   z-index: 7;
 }
+@media screen and (max-width: 700px) {
+  .home-hero {
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+}
+@media screen and (max-width: 550px) {
+  .home-hero {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
+}
 @media (max-width: 1000px) {
   .home-hero {
     margin-top: -23rem;
@@ -670,6 +716,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .section {
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  }
+}
+@media screen and (max-width: 550px) {
+  .section {
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+  }
 }
 @media (max-width: 1000px) {
   .section {
@@ -796,6 +852,16 @@ html {
   position: relative;
   width: 100%;
 }
+@media screen and (max-width: 800px) {
+  .services-body {
+    clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+  }
+}
+@media screen and (max-width: 500px) {
+  .services-body {
+    clip-path: polygon(100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
+  }
+}
 
 .servicesMain {
   position: relative;
@@ -890,13 +956,10 @@ html {
   width: 40%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 700px) {
   html {
     font-size: calc(52.2% + 0.390625vw);
     scroll-behavior: smooth;
-  }
-  .nav {
-    font-size: calc(45.2% + 0.390625vw);
   }
 }
 @media screen and (max-width: 900px) {

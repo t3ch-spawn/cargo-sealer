@@ -2,6 +2,7 @@
   position: relative;
   background-color: $btn-text-white;
   @include sectionSpacing;
+  min-height: initial;
   margin-top: 0rem !important;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -32,7 +33,6 @@
   &__para {
     color: $nav-gray;
     font-size: $fs-normal;
-    text-align: center;
   }
 
   &__imgContainer {

@@ -14,6 +14,14 @@
   clip-path: $clip-path2;
   padding-bottom: 15rem;
 
+  @media screen and (max-width: 700px) {
+    clip-path: $clip-path3;
+  }
+
+  @media screen and (max-width: 550px) {
+    clip-path: $clip-path4;
+  }
+
   @include mediacheck;
   @media (max-width: 1000px) {
     margin-top: 0rem;
@@ -103,6 +111,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 700px) {
+    clip-path: $clip-path3;
+  }
+
+  @media screen and (max-width: 550px) {
+    clip-path: $clip-path4;
+  }
 
   @include mediacheck;
 

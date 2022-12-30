@@ -1,12 +1,8 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 700px) {
   // adjusting size of overall page at 1000px mark
   html {
     font-size: calc(52.2% + 0.390625vw);
     scroll-behavior: smooth;
-  }
-
-  .nav {
-    font-size: calc(45.2% + 0.390625vw);
   }
 }
 

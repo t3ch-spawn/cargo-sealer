@@ -17,7 +17,13 @@
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
   clip-path: $clip-path2;
-  min-height: 100vh;
+
+  @media screen and (max-width: 700px) {
+    clip-path: $clip-path3;
+  }
+  @media screen and (max-width: 550px) {
+    clip-path: $clip-path4;
+  }
 }
 
 @mixin green-btn {
