@@ -18,7 +18,7 @@ function Download2({
   useEffect(() => {
     const el2 = ref.current;
 
-    window.intlTelInput(el2, {});
+    // window.intlTelInput(el2, {});
   }, []);
 
   return (
