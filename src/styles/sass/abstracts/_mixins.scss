@@ -16,12 +16,8 @@
 @mixin sectionSpacing {
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
-  clip-path: $clip-path3;
+  clip-path: $clip-path2;
   min-height: 100vh;
-
-  @media screen and (max-width: 1000px) {
-    margin-top: -23rem;
-  }
 }
 
 @mixin green-btn {
@@ -42,5 +38,16 @@
     transition: 0.5s $ease-back;
 
     @include animBtnGreen;
+  }
+}
+
+@mixin mediacheck {
+  @media (max-width: 1000px) {
+    margin-top: -23rem;
+  }
+
+  @media (max-width: 1200px) and (min-width: 800px) {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
   }
 }

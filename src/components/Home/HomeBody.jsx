@@ -53,7 +53,7 @@ function BodyHelper({
         <p className="section__title">{title}</p>
         <h2 className="section__subtitle">{subtitle}</h2>
         <p className="section__para">{para}</p>
-        <div>
+        <div className="section__item-paraContainer">
           <p className="section__item-para section__item-para--1">
             <img src={itemimg1} alt="" />
 

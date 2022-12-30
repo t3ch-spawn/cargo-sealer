@@ -11,7 +11,7 @@
   align-items: center;
   width: 100%;
   background: $btn-text-white;
-  clip-path: $clip-path;
+  clip-path: $clip-path2;
   padding-bottom: 15rem;
 
   z-index: 7;
@@ -25,6 +25,10 @@
     font-size: 3rem;
     text-align: center;
     font-family: "Raleway";
+  }
+
+  &__para {
+    text-align: center;
   }
 
   // styling buttons
@@ -70,6 +74,11 @@
 
   &__img {
     margin-top: 3rem;
+    max-width: 25rem;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -83,21 +92,23 @@
   position: relative;
   min-height: 100vh;
   padding: 26rem 7rem 18rem 7rem;
-  clip-path: $clip-path;
+  clip-path: $clip-path2;
   margin-top: -20rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  & > *:not(:last-child) {
-    margin-right: 4rem;
-  }
+  @include mediacheck;
 
   &__normal {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     // padding: 1rem 8rem;
+
+    & > *:not(:last-child) {
+      margin-right: 6rem;
+    }
 
     .section__btn--2 {
       display: none;
@@ -106,10 +117,14 @@
 
   &__reverse {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     // padding: 1rem 8rem;
     flex-direction: row-reverse;
+
+    & > *:not(:first-child) {
+      margin-right: 6rem;
+    }
   }
 
   &__imgContainer {

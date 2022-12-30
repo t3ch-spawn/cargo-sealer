@@ -1,18 +1,24 @@
 .appInstall {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   // padding: 26rem 7rem 18rem 7rem;
   // margin-top: -20rem;
 
   // clip-path: $clip-path;
 
   @include sectionSpacing;
+  @include mediacheck;
   position: relative;
+
+  & > *:not(:last-child) {
+    margin-right: 6rem;
+  }
 
   // STYLING LEFT SIDE OF SECTION
   &__typography {
-    max-width: 35rem;
+    max-width: 33rem;
 
     & > *:not(:last-child) {
       margin-bottom: 1.5rem;

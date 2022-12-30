@@ -12,6 +12,8 @@
   align-items: center;
   justify-content: center;
 
+  @include mediacheck;
+
   & > *:not(:last-child) {
     margin-right: 4rem;
   }

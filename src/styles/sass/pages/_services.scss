@@ -1,7 +1,7 @@
 // styling main part of services
 .services-body {
   background-color: $button-gray;
-  clip-path: $clip-path2;
+  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   padding-top: 10rem;
   padding-bottom: 25rem;
   position: relative;
@@ -11,31 +11,38 @@
 // styling sections of main body
 .servicesMain {
   position: relative;
+
+  padding: 5rem 7rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 80%;
-  padding: 4rem;
-  margin-inline: auto;
-  // clip-path: $clip-path;
 
-  & > *:not(:last-child) {
-    // margin-right: 30%;
+  @include mediacheck;
+  @media (max-width: 1000px) {
+    margin-top: 0;
   }
 
   &__normal {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    // padding: 1rem 8rem;
+
+    & > *:not(:last-child) {
+      margin-right: 6rem;
+    }
   }
 
   &__reverse {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    // padding: 1rem 8rem;
+
     flex-direction: row-reverse;
+
+    & > *:not(:first-child) {
+      margin-right: 6rem;
+    }
   }
 
   &__imgContainer {

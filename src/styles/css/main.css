@@ -20,21 +20,31 @@ html {
 
 .appInstall {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
   min-height: 100vh;
   position: relative;
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .appInstall {
     margin-top: -23rem;
   }
 }
+@media (max-width: 1200px) and (min-width: 800px) {
+  .appInstall {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+}
+.appInstall > *:not(:last-child) {
+  margin-right: 6rem;
+}
 .appInstall__typography {
-  max-width: 35rem;
+  max-width: 33rem;
 }
 .appInstall__typography > *:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -110,9 +120,15 @@ html {
   justify-content: center;
   /* Firefox arrow fix*/
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .download2 {
     margin-top: -23rem;
+  }
+}
+@media (max-width: 1200px) and (min-width: 800px) {
+  .download2 {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
   }
 }
 .download2 > *:not(:last-child) {
@@ -211,11 +227,6 @@ html {
   min-height: 100vh;
   padding-top: 28rem;
 }
-@media screen and (max-width: 1000px) {
-  .questions {
-    margin-top: -23rem;
-  }
-}
 .questions__box {
   display: flex;
   justify-content: space-between;
@@ -269,11 +280,6 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-@media screen and (max-width: 1000px) {
-  .three-boxes {
-    margin-top: -23rem;
-  }
 }
 .three-boxes__row {
   display: flex;
@@ -527,7 +533,7 @@ html {
   align-items: center;
   width: 100%;
   background: #fcfdfc;
-  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
   padding-bottom: 15rem;
   z-index: 7;
 }
@@ -539,6 +545,9 @@ html {
   font-size: 3rem;
   text-align: center;
   font-family: "Raleway";
+}
+.home-hero__para {
+  text-align: center;
 }
 .home-hero__btnContainer {
   display: flex;
@@ -582,6 +591,10 @@ html {
 }
 .home-hero__img {
   margin-top: 3rem;
+  max-width: 25rem;
+}
+.home-hero__img img {
+  width: 100%;
 }
 
 .homeBody {
@@ -593,28 +606,42 @@ html {
   position: relative;
   min-height: 100vh;
   padding: 26rem 7rem 18rem 7rem;
-  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
   margin-top: -20rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section > *:not(:last-child) {
-  margin-right: 4rem;
+@media (max-width: 1000px) {
+  .section {
+    margin-top: -23rem;
+  }
+}
+@media (max-width: 1200px) and (min-width: 800px) {
+  .section {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
 }
 .section__normal {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.section__normal > *:not(:last-child) {
+  margin-right: 6rem;
 }
 .section__normal .section__btn--2 {
   display: none;
 }
 .section__reverse {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+}
+.section__reverse > *:not(:first-child) {
+  margin-right: 6rem;
 }
 .section__imgContainer {
   max-width: 25rem;
@@ -698,7 +725,7 @@ html {
 
 .services-body {
   background-color: #e1eddb;
-  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   padding-top: 10rem;
   padding-bottom: 25rem;
   position: relative;
@@ -707,22 +734,43 @@ html {
 
 .servicesMain {
   position: relative;
+  padding: 5rem 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  margin-inline: auto;
+}
+@media (max-width: 1000px) {
+  .servicesMain {
+    margin-top: -23rem;
+  }
+}
+@media (max-width: 1200px) and (min-width: 800px) {
+  .servicesMain {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+}
+@media (max-width: 1000px) {
+  .servicesMain {
+    margin-top: 0;
+  }
 }
 .servicesMain__normal {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.servicesMain__normal > *:not(:last-child) {
+  margin-right: 6rem;
 }
 .servicesMain__reverse {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
+}
+.servicesMain__reverse > *:not(:first-child) {
+  margin-right: 6rem;
 }
 .servicesMain__imgContainer {
   max-width: 25rem;
@@ -773,8 +821,11 @@ html {
 
 @media screen and (max-width: 1000px) {
   html {
-    font-size: calc(45.2% + 0.390625vw);
+    font-size: calc(50.2% + 0.390625vw);
     scroll-behavior: smooth;
+  }
+  .nav {
+    font-size: calc(45.2% + 0.390625vw);
   }
 }
 @media screen and (max-width: 900px) {
@@ -790,6 +841,63 @@ html {
   }
   .three-boxes__row > :nth-child(2) {
     width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+  }
+  .section__normal > *:not(:last-child) {
+    margin-right: 0rem;
+  }
+  .section__reverse > *:not(:first-child) {
+    margin-right: 0rem;
+  }
+  .section__typography {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__title {
+    text-align: center;
+  }
+  .section__subtitle {
+    text-align: center;
+  }
+  .section__para {
+    text-align: center;
+  }
+  .section__item-paraContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .section__btnContainer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section__btn {
+    width: 80%;
+  }
+  .section__btn:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .appInstall {
+    flex-direction: column-reverse;
+  }
+  .appInstall > *:not(:last-child) {
+    margin-right: 0rem;
+  }
+  .appInstall__imgContainer {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  .appInstall__title {
+    text-align: center;
+  }
+  .appInstall__para {
+    text-align: center;
   }
 }
 @media screen and (max-width: 769px) {
@@ -820,7 +928,7 @@ html {
     background-color: #fff;
   }
   .nav__icon--mobile {
-    display: block;
+    display: inline-block;
     position: relative;
     z-index: 30;
   }
@@ -916,6 +1024,18 @@ html {
   }
 }
 @media screen and (max-width: 700px) {
+  .appInstall__btnContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .appInstall__btnContainer > *:not(:last-child) {
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+  .appInstall__btn {
+    width: 80%;
+  }
   .footer {
     flex-direction: column;
   }
