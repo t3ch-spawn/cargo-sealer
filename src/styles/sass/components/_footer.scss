@@ -77,7 +77,32 @@
     }
   }
 
-  &__link {
+  &__link:visited,
+  &__link:link {
     text-decoration: none;
+    transition: 0.2s ease;
+    position: relative;
+  }
+
+  // hover animation
+  &__link::after {
+    content: "";
+    display: block;
+    width: 0%;
+    position: absolute;
+    right: 50%;
+    bottom: -4px;
+    transition: 0.3s $ease-back;
+    background-color: $footer-text-gray;
+    height: 2px;
+  }
+
+  &__item--big &__link::after {
+    background-color: $btn-text-white;
+  }
+
+  &__item:hover &__link::after {
+    width: 100%;
+    right: 0;
   }
 }

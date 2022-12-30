@@ -48,6 +48,7 @@ function Download2({
             type="number"
             className="download2__input"
             id="phone"
+            placeholder="(+234) 822 000 4944"
           />
           <label htmlFor="phone" className="download2__label">
             Mobile number

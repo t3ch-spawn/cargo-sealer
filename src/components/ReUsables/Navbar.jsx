@@ -14,21 +14,33 @@ function Navbar() {
 
       <ul className="nav__list">
         <li className="nav__item">
-          Partner <img src={Arrow} alt="" />
+          <a href="" className="nav__link">
+            Partner
+          </a>
+          <img src={Arrow} alt="" />
         </li>
         <li className="nav__item">
-          Products <img src={Arrow} alt="" />
+          <a href="" className="nav__link">
+            Products
+          </a>
+          <img src={Arrow} alt="" />
         </li>
         <li className="nav__item">
-          Company <img src={Arrow} alt="" />
+          <a href="" className="nav__link">
+            Company
+          </a>
+          <img src={Arrow} alt="" />
         </li>
         <li className="nav__item">
-          Support <img src={Arrow} alt="" />
+          <a href="" className="nav__link">
+            Support
+          </a>
+          <img src={Arrow} alt="" />
         </li>
       </ul>
 
       <div className="nav__cta">
-        <a href="#appInstall" className="nav__cta__link">
+        <a href="#appInstall" className="nav__cta-link">
           Get Started
         </a>
       </div>

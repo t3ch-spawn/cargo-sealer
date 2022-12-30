@@ -28,7 +28,7 @@ function Shop() {
         para="Download Cargodealer’s user app and Improve your business by hosting your products on our marketplace."
         img={Phones3}
       />
-      <Questions bgc={{ zIndex: 2 }} />
+      {/* <Questions bgc={{ zIndex: 2 }} /> */}
       <Footer />
     </div>
   );

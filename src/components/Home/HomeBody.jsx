@@ -43,13 +43,9 @@ function BodyHelper({
   itempara3,
   btninfo1,
   btninfo2,
-  bgimg,
 }) {
   return (
     <div className={className} style={zIndex}>
-      {/* <div className="section__bg-img" style={zIndex}>
-        <img src={bgimg} alt="" />
-      </div> */}
       <div className="section__imgContainer">
         <img src={sectionimg} alt="" />
       </div>

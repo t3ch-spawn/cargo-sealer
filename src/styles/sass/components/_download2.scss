@@ -8,7 +8,12 @@
   margin-top: 0;
   padding-top: 5rem;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+
+  & > *:not(:last-child) {
+    margin-right: 4rem;
+  }
 
   &__title {
     color: $primary-dark-gray;
@@ -62,9 +67,9 @@
     background: $btn-text-white;
     height: 2.5rem;
     padding: 0 2rem;
-    padding-left: 3rem;
     border: 2px solid #e8e9e8;
     border-radius: 0.5rem;
+    font-family: "Poppins";
 
     /* Chrome, Safari, Edge, Opera arrow fix*/
     &::-webkit-outer-spin-button,

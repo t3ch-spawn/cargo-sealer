@@ -6,6 +6,7 @@ import Pickup from "./components/Pickup/Pickup";
 import Dealer from "./components/Dealer/Dealer";
 import Vendor from "./components/Vendor/Vendor";
 import Shop from "./components/Shop/Shop";
+import Services from "./components/Services/Services";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/dealer" element={<Dealer />} />
         <Route path="/vendor" element={<Vendor />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/services" element={<Services />} />
         <Route />
       </Routes>
     </Router>

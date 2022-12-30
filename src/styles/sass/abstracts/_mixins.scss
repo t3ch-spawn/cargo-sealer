@@ -2,19 +2,21 @@
   &:hover {
     background-color: $primary-dark-gray;
     color: $btn-text-white;
+    letter-spacing: 1px;
   }
 }
 
 @mixin animBtnGreen {
   &:hover {
     background-color: $primary-green;
+    letter-spacing: 1px;
   }
 }
 
 @mixin sectionSpacing {
   margin-top: -20rem;
   padding: 26rem 7rem 20rem 7rem;
-  clip-path: $clip-path;
+  clip-path: $clip-path3;
   min-height: 100vh;
 }
 
@@ -33,7 +35,7 @@
     background-color: $button-green;
     padding: 0.6rem 2.5rem;
     border-radius: 0.5rem;
-    transition: 0.5s ease;
+    transition: 0.5s $ease-back;
 
     @include animBtnGreen;
   }

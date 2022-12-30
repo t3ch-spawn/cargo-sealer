@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26rem 7rem 18rem 7rem;
-  margin-top: -20rem;
+  // padding: 26rem 7rem 18rem 7rem;
+  // margin-top: -20rem;
 
-  clip-path: $clip-path;
+  // clip-path: $clip-path;
+
+  @include sectionSpacing;
   position: relative;
 
   // STYLING LEFT SIDE OF SECTION

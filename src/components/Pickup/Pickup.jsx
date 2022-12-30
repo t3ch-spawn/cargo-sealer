@@ -27,7 +27,7 @@ function Pickup() {
         para="Download Cargodealer and come start managing your packages with us."
         img={Phones1}
       />
-      <Questions bgc={{ zIndex: 2 }} />
+      {/* <Questions bgc={{ zIndex: 2 }} /> */}
       <Footer />
     </div>
   );

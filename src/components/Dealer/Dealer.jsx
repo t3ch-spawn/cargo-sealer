@@ -27,7 +27,7 @@ function Dealer() {
         para="Download Cargodealer’s driver app and start cashing out each week with us."
         img={Phones2}
       />
-      <Questions bgc={{ zIndex: 2 }} />
+      {/* <Questions bgc={{ zIndex: 2 }} /> */}
       <Footer />
     </div>
   );

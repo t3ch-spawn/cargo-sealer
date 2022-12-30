@@ -85,6 +85,13 @@
   padding: 26rem 7rem 18rem 7rem;
   clip-path: $clip-path;
   margin-top: -20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: 4rem;
+  }
 
   &__normal {
     display: flex;

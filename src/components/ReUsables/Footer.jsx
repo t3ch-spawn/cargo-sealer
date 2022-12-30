@@ -38,9 +38,9 @@ function Footer() {
         {/* LIST TWO */}
         <ul className="footer__list">
           <div className="footer__item footer__item--big">
-            <a href="" className="footer__link">
+            <Link to="/services" className="footer__link">
               Our Services
-            </a>
+            </Link>
           </div>
           <div className="footer__item">
             <Link to="/pickup" className="footer__link">
