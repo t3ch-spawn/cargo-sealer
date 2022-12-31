@@ -10,6 +10,7 @@ $button-gray: #e1eddb;
 $footer-text-gray: #a5a7a4;
 
 // fontsizes
+$fs-small: 1rem;
 $fs-normal: 1.2rem;
 $fs-medium: 2rem;
 $fs-big: 3rem;
@@ -24,7 +25,3 @@ $section-padding: 26rem 7rem 18rem 7rem;
 
 // transition
 $ease-back: cubic-bezier(0.41, 1.8, 0.55, 1);
-
-@media screen and (max-width: 800px) {
-  $fs-normal: 3rem !important;
-}

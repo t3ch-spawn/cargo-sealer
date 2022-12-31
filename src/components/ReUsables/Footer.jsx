@@ -67,9 +67,9 @@ function Footer() {
             </a>
           </div>
           <div className="footer__item">
-            <a href="" className="footer__link">
+            <Link to="/about" className="footer__link">
               About Us
-            </a>
+            </Link>
           </div>
           <div className="footer__item">
             <a href="" className="footer__link">
