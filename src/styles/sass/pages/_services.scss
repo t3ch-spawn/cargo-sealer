@@ -1,3 +1,66 @@
+// styling hero part of services
+
+// HERO OF BODY
+.service-hero {
+  position: relative;
+  padding: 5rem 7rem 0rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: $btn-text-white;
+  clip-path: $clip-path2;
+  padding-bottom: 8rem;
+
+  @media screen and (max-width: 700px) {
+    clip-path: $clip-path3;
+  }
+
+  @media screen and (max-width: 550px) {
+    clip-path: $clip-path4;
+  }
+
+  @include mediacheck;
+  @media (max-width: 1000px) {
+    margin-top: 0rem;
+  }
+
+  z-index: 7;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__subtitle {
+    color: $primary-green;
+    font-weight: 600;
+    font-size: $fs-normal;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Raleway";
+    max-width: 60rem;
+  }
+
+  &__para {
+    text-align: center;
+    font-size: $fs-normal;
+  }
+
+  &__img {
+    margin-top: 2rem;
+    max-width: 25rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // styling main part of services
 .services-body {
   background-color: $button-gray;
@@ -9,30 +72,36 @@
   @media screen and (max-width: 500px) {
     clip-path: polygon(100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
   }
+
+  margin-top: -10rem;
   padding-top: 10rem;
-  padding-bottom: 25rem;
+  padding-bottom: 13rem;
   position: relative;
+  z-index: 4;
   width: 100%;
 }
 
 // styling sections of main body
 .servicesMain {
   position: relative;
-
-  padding: 5rem 7rem;
-
+  padding: 5rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include mediacheck;
+
+  @media screen and (max-width: 500px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
   @media (max-width: 1000px) {
     margin-top: 0;
   }
 
   &__normal {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 
     & > *:not(:last-child) {
@@ -89,6 +158,78 @@
   @include green-btn;
 
   &__cta-link {
-    width: 40%;
+    width: 43%;
+  }
+}
+
+// STYLING BOTTOM PART OF SERVICES
+.service-bottom {
+  position: relative;
+  background-color: $btn-text-white;
+  @include sectionSpacing;
+  display: flex;
+  margin-top: -15rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  @include mediacheck;
+
+  &__title {
+    color: $primary-dark-gray;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > *:not(:last-child) {
+      margin-right: 6rem;
+    }
+  }
+
+  &__imgContainer {
+    max-width: 28rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.bottom-helper {
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    max-width: 35rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__title {
+    color: $primary-green;
+    font-weight: 600;
+    font-family: "Raleway";
+    font-size: 1.4rem;
+  }
+
+  &__para {
+    color: $nav-gray;
+    font-weight: 400;
+    font-size: $fs-normal;
+    line-height: 1.4rem;
   }
 }

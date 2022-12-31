@@ -12,7 +12,7 @@
   width: 100%;
   background: $btn-text-white;
   clip-path: $clip-path2;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 
   @media screen and (max-width: 700px) {
     clip-path: $clip-path3;
@@ -112,14 +112,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 700px) {
-    clip-path: $clip-path3;
-  }
-
-  @media screen and (max-width: 550px) {
-    clip-path: $clip-path4;
-  }
-
+  @include sectionSpacing;
   @include mediacheck;
 
   &__normal {

@@ -38,6 +38,7 @@
     &__normal {
       & > *:not(:last-child) {
         margin-right: 0rem;
+        margin-bottom: 1.7rem;
       }
     }
 
@@ -45,11 +46,19 @@
       & > *:not(:first-child) {
         margin-right: 0rem;
       }
+
+      & > *:not(:last-child) {
+        margin-bottom: 1.7rem;
+      }
     }
 
     &__typography {
       display: flex;
       flex-direction: column;
+
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
     }
 
     &__title {
@@ -138,6 +147,24 @@
       width: 100%;
     }
   }
+
+  .service-bottom {
+    &__row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .bottom-helper {
+    text-align: center;
+
+    &__container {
+      margin-right: 0rem !important;
+
+      & > *:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -150,7 +177,7 @@
     backdrop-filter: blur(28px);
     -webkit-backdrop-filter: blur(28px);
     -moz-backdrop-filter: blur(28px);
-    height: 7.5rem;
+    height: 6rem;
   }
 
   .nav {
@@ -175,6 +202,7 @@
       display: inline-block;
       position: relative;
       z-index: 30;
+      height: 3.5rem;
     }
 
     // removing old icon
@@ -199,7 +227,7 @@
 
     &__link,
     &__item img {
-      font-size: 2rem;
+      font-size: $fs-normal;
       transform: translateY(3rem);
       transition: all 0.5s ease !important;
     }
@@ -212,13 +240,13 @@
     }
 
     &__cta-link {
-      font-size: 2rem;
+      font-size: $fs-normal;
       width: 20rem;
     }
 
     &__button {
       position: absolute;
-      top: 3.8rem;
+      top: 3rem;
       right: 3rem;
       z-index: 30;
       display: flex;
@@ -347,6 +375,40 @@
     }
   }
 
+  // STACKING THREE BOXES
+  .three-boxes {
+    &__row--2 {
+      flex-direction: column;
+      margin-bottom: 3rem !important;
+
+      & > * {
+        width: 100%;
+      }
+
+      & > *:not(:last-child) {
+        margin-bottom: 3rem;
+        margin-right: 0rem;
+      }
+    }
+  }
+
+  .box-helper {
+    padding: 1.5rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 1.4rem !important;
+    }
+
+    &__para {
+      font-size: $fs-normal !important;
+    }
+  }
+
   // ADJUSTING FOOTER
   .footer {
     flex-direction: column;
@@ -386,36 +448,11 @@
 }
 
 @media screen and (max-width: 550px) {
-  // STACKING THREE BOXES
-  .three-boxes {
-    &__row--2 {
-      flex-direction: column;
+  .nav {
+    padding-left: 4rem;
 
-      & > * {
-        width: 100%;
-      }
-
-      & > *:not(:last-child) {
-        margin-bottom: 2rem;
-        margin-right: 0rem;
-      }
-    }
-  }
-
-  .box-helper {
-    padding: 1.5rem;
-
-    & > *:not(:last-child) {
-      margin-bottom: 0.8rem;
-    }
-
-    &__title {
-      font-weight: 600;
-      font-size: 1.4rem !important;
-    }
-
-    &__para {
-      font-size: $fs-normal !important;
+    &__cta-link {
+      width: 15rem;
     }
   }
 }
