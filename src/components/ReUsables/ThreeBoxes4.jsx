@@ -16,8 +16,8 @@ function ThreeBoxes4({ bgc, title }) {
   return (
     <div className="three-boxes" style={bgc}>
       <h2 className="three-boxes__title">{title}</h2>
-      <div className="three-boxes__row">
-        <div className="three-boxes__row--2">
+      <div className="three-boxes__row three-boxes__row--shop">
+        <div className="three-boxes__row--2 three-boxes__row--2--shop">
           <BoxHelper
             icon={SendGift}
             title="Set Your Own Schedule"

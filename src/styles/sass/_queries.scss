@@ -391,6 +391,18 @@
         margin-bottom: 3rem;
         margin-right: 0rem;
       }
+
+      //////////////////
+      /// styling three boxes for shop
+      &--shop {
+        margin-bottom: 9rem !important;
+
+        & > *:not(:last-child) {
+          margin-bottom: 9rem;
+        }
+      }
+
+      ///////////////////
     }
   }
 

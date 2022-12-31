@@ -366,6 +366,9 @@ html {
   width: 100%;
   align-items: center;
 }
+.three-boxes__row--shop {
+  margin-top: 6rem;
+}
 .three-boxes__row > :nth-child(2) {
   width: 31%;
 }
@@ -376,6 +379,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .three-boxes__row--2--shop {
+    margin-bottom: 9rem !important;
+  }
 }
 .three-boxes__row--2 > * {
   width: 50%;
@@ -398,14 +406,14 @@ html {
   border-radius: 0.5rem;
   text-align: center;
   padding: 1.3rem;
-  height: 13rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .box-helper--2 {
-  background-color: #e1eddb;
+  background-color: transparent;
 }
 .box-helper > *:not(:last-child) {
   margin-bottom: 0.6rem;
@@ -1631,6 +1639,12 @@ html {
   .three-boxes__row--2 > *:not(:last-child) {
     margin-bottom: 3rem;
     margin-right: 0rem;
+  }
+  .three-boxes__row--2--shop {
+    margin-bottom: 9rem !important;
+  }
+  .three-boxes__row--2--shop > *:not(:last-child) {
+    margin-bottom: 9rem;
   }
   .box-helper {
     padding: 1.5rem;
