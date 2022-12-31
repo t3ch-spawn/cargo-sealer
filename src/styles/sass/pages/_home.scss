@@ -310,6 +310,7 @@
 
   @media screen and (max-width: 650px) {
     max-width: 25rem;
+    font-size: $fs-normal;
   }
 
   & > *:not(:last-child) {
@@ -318,6 +319,10 @@
 
   &__para {
     font-size: $fs-small;
+
+    @media screen and (max-width: 650px) {
+      font-size: $fs-normal;
+    }
   }
 
   &__user {
@@ -338,6 +343,10 @@
     font-weight: 600;
     color: $primary-dark-gray;
     font-size: $fs-small;
+
+    @media screen and (max-width: 650px) {
+      font-size: $fs-normal;
+    }
   }
 
   // styling containers housing testimonials

@@ -961,6 +961,7 @@ html {
 @media screen and (max-width: 650px) {
   .testimonial {
     max-width: 25rem;
+    font-size: 1.2rem;
   }
 }
 .testimonial > *:not(:last-child) {
@@ -968,6 +969,11 @@ html {
 }
 .testimonial__para {
   font-size: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .testimonial__para {
+    font-size: 1.2rem;
+  }
 }
 .testimonial__user {
   display: flex;
@@ -984,6 +990,11 @@ html {
   font-weight: 600;
   color: #1d221b;
   font-size: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .testimonial__name {
+    font-size: 1.2rem;
+  }
 }
 .testimonial__container {
   display: flex;
