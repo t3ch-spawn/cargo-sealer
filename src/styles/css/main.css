@@ -936,11 +936,23 @@ html {
   font-size: 1.2rem;
 }
 .home-bottom__partners {
-  width: 100%;
-  max-width: 35rem;
+  width: 105%;
+  max-width: 40rem;
+  height: 4rem;
+}
+@media screen and (max-width: 500px) {
+  .home-bottom__partners {
+    height: 3.2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .home-bottom__partners {
+    height: initial;
+  }
 }
 .home-bottom__partners img {
   width: 100%;
+  height: 100%;
 }
 
 .testimonial {

@@ -285,11 +285,21 @@
   }
 
   &__partners {
-    width: 100%;
-    max-width: 35rem;
+    width: 105%;
+    max-width: 40rem;
+    height: 4rem;
+
+    @media screen and (max-width: 500px) {
+      height: 3.2rem;
+    }
+
+    @media screen and (max-width: 350px) {
+      height: initial;
+    }
 
     img {
       width: 100%;
+      height: 100%;
     }
   }
 }
