@@ -11,7 +11,7 @@ import Corona from "../../images/Corona.png";
 function Pickup() {
   return (
     <div>
-      <Navbar />
+      <Navbar ctaWord="Request Pickup" />
       <Download2
         img={Corona}
         bgc={{ zIndex: 5 }}

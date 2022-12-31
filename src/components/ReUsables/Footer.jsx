@@ -7,7 +7,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__left">
-        <img src={Logo} alt="" className="footer__icon" />
+        <Link to="/">
+          <img src={Logo} alt="" className="footer__icon" />
+        </Link>
 
         <p>Cargodealer Inc 2022</p>
         <small>Terms & Conditions | Privacy Policy</small>

@@ -11,7 +11,7 @@ import Catalogue from "../../images/Catalogue-bro.png";
 function Vendor() {
   return (
     <div>
-      <Navbar />
+      <Navbar ctaWord="Request Pickup" />
       <Download2
         bgc={{ zIndex: 5 }}
         titlepart1="Make"

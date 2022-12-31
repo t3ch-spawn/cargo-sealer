@@ -8,7 +8,7 @@ import AboutTargets from "./AboutTargets";
 function About_index() {
   return (
     <div>
-      <Navbar />
+      <Navbar ctaWord="Request Pickup" />
       <AboutHero />
       <AboutTargets />
       <AboutBottom />

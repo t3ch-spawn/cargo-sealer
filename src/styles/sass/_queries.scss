@@ -30,144 +30,6 @@
 
 // STACKING MOST OF THE ROWS
 @media screen and (max-width: 800px) {
-  // STACKING HOMEBODY SECTIONS
-
-  .section {
-    flex-direction: column;
-
-    &__normal {
-      & > *:not(:last-child) {
-        margin-right: 0rem;
-        margin-bottom: 1.7rem;
-      }
-    }
-
-    &__reverse {
-      & > *:not(:first-child) {
-        margin-right: 0rem;
-      }
-
-      & > *:not(:last-child) {
-        margin-bottom: 1.7rem;
-      }
-    }
-
-    &__typography {
-      display: flex;
-      flex-direction: column;
-
-      & > *:not(:last-child) {
-        margin-bottom: 2rem;
-      }
-    }
-
-    &__title {
-      text-align: center;
-    }
-
-    &__subtitle {
-      text-align: center;
-    }
-
-    // stylilng main paragraph
-    &__para {
-      text-align: center;
-    }
-
-    &__item-paraContainer {
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-    }
-
-    &__btnContainer {
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    &__btn {
-      width: 80%;
-
-      &:not(:last-child) {
-        margin-right: 0rem;
-        margin-bottom: 1rem;
-      }
-    }
-  }
-
-  // STACKING APP DOWNLOAD (1)
-  .appInstall {
-    flex-direction: column-reverse;
-
-    & > *:not(:last-child) {
-      margin-right: 0rem;
-    }
-
-    &__imgContainer {
-      margin-bottom: 4rem;
-      margin-top: 2rem;
-    }
-
-    &__title {
-      text-align: center;
-    }
-    &__para {
-      text-align: center;
-    }
-  }
-
-  // STACKING SERVICES
-  .servicesMain {
-    flex-direction: column;
-
-    &__normal {
-      & > *:not(:last-child) {
-        margin-right: 0rem;
-      }
-    }
-
-    &__reverse {
-      & > *:not(:first-child) {
-        margin-right: 0rem;
-      }
-    }
-
-    &__typography {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    &__cta {
-      align-self: center;
-    }
-
-    &__cta-link {
-      width: 100%;
-    }
-  }
-
-  .service-bottom {
-    &__row {
-      flex-direction: column-reverse;
-    }
-  }
-
-  .bottom-helper {
-    text-align: center;
-
-    &__container {
-      margin-right: 0rem !important;
-
-      & > *:not(:last-child) {
-        margin-bottom: 3rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 769px) {
   // implementing hamburger menu
 
   .navigation {
@@ -330,6 +192,181 @@
     }
   }
 
+  // STACKING HOMEBODY SECTIONS
+
+  .section {
+    flex-direction: column;
+
+    &__normal {
+      & > *:not(:last-child) {
+        margin-right: 0rem;
+        margin-bottom: 1.7rem;
+      }
+    }
+
+    &__reverse {
+      & > *:not(:first-child) {
+        margin-right: 0rem;
+      }
+
+      & > *:not(:last-child) {
+        margin-bottom: 1.7rem;
+      }
+    }
+
+    &__typography {
+      display: flex;
+      flex-direction: column;
+
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+
+    // stylilng main paragraph
+    &__para {
+      text-align: center;
+    }
+
+    &__item-paraContainer {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    &__btnContainer {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__btn {
+      width: 80%;
+
+      &:not(:last-child) {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // STACKING APP DOWNLOAD (1)
+  .appInstall {
+    flex-direction: column-reverse;
+
+    & > *:not(:last-child) {
+      margin-right: 0rem;
+    }
+
+    &__imgContainer {
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+    }
+
+    &__title {
+      text-align: center;
+    }
+    &__para {
+      text-align: center;
+    }
+  }
+
+  // STACKING SERVICES
+  .servicesMain {
+    flex-direction: column;
+
+    &__normal {
+      & > *:not(:last-child) {
+        margin-right: 0rem;
+      }
+    }
+
+    &__reverse {
+      & > *:not(:first-child) {
+        margin-right: 0rem;
+      }
+    }
+
+    &__typography {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__cta {
+      align-self: center;
+    }
+
+    &__cta-link {
+      width: 100%;
+    }
+  }
+
+  .service-bottom {
+    &__row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .bottom-helper {
+    text-align: center;
+
+    &__container {
+      margin-right: 0rem !important;
+
+      & > *:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  // ADJUSTING FOOTER
+  .footer {
+    flex-direction: column;
+
+    // spacing 2 divs in footer
+    & > *:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &__left {
+      text-align: center;
+    }
+
+    &__right {
+      flex-direction: column;
+    }
+
+    &__list {
+      align-items: center;
+
+      // removing spacing in the three lists
+      &:not(:last-child) {
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+      }
+
+      // respacing the footer items
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
   // removing button hover effect
 }
 

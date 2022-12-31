@@ -10,7 +10,7 @@ import HomeBottom from "./HomeBottom";
 function index() {
   return (
     <div className="home">
-      <Navbar />
+      <Navbar ctaWord="Get Started" />
       <HomeHero />
       <HomeBody />
       <AppDownload

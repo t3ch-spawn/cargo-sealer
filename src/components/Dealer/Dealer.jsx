@@ -11,7 +11,7 @@ import Ride from "../../images/Order-ride.png";
 function Dealer() {
   return (
     <div>
-      <Navbar />
+      <Navbar ctaWord="Request Pickup" />
       <Download2
         bgc={{ zIndex: 5 }}
         title="Start making pickups with  "

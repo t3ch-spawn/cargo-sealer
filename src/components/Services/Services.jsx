@@ -8,7 +8,7 @@ import ServicesBottom from "./ServicesBottom";
 function Services() {
   return (
     <div>
-      <Navbar />
+      <Navbar ctaWord="Request Pickup" />
       <ServicesHero />
       <ServicesBody />
       <ServicesBottom />

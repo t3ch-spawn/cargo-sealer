@@ -7,7 +7,7 @@ import Phones1 from "../../images/phones-1.png";
 function DownloadPage() {
   return (
     <div>
-      <Navbar />
+      <Navbar ctaWord="Get Started" />
       <AppDownload
         bgc={{ backgroundColor: "#e1eddb" }}
         title="We promise you an amazing experience with your packages"
