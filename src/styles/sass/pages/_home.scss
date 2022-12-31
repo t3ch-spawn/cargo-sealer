@@ -304,6 +304,14 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @media screen and (max-width: 1150px) {
+    max-width: 22rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    max-width: 25rem;
+  }
+
   & > *:not(:last-child) {
     margin-bottom: 1.8rem;
   }
@@ -365,7 +373,7 @@
         }
       }
 
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 650px) {
         flex-direction: column;
 
         & > *:not(:last-child) {
@@ -382,7 +390,7 @@
         margin-right: 2rem;
       }
 
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 650px) {
         flex-direction: column;
 
         & > *:not(:last-child) {
