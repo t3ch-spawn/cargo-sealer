@@ -160,7 +160,7 @@
     }
 
     @media screen and (max-width: 500px) {
-      padding-bottom: 2rem;
+      // padding-bottom: 2rem;
     }
 
     &__heading {
@@ -206,9 +206,6 @@
     grid-auto-rows: 1fr;
     grid-gap: 1.5rem;
     width: 80%;
-
-    @media screen and (max-width) {
-    }
   }
 
   img {
