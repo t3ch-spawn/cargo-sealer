@@ -19,7 +19,11 @@ function Navbar({ ctaWord }) {
     const dropDowns = document.querySelectorAll(".nav__dropDown");
     const arrows = document.querySelectorAll(".nav__arrow");
     const overlay = document.querySelector(".overlay");
+    const checkBox = document.getElementById("nav-toggle");
     overlay.classList.remove("active");
+
+    // closing whole nav functionality
+    checkBox.checked = false;
 
     dropDowns.forEach((drop) => {
       drop.classList.remove("active");
