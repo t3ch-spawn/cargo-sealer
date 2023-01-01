@@ -2065,7 +2065,7 @@ input:focus:-khtml-autofill {
     opacity: 0;
     pointer-events: none;
     transition: all 0.8s ease;
-    padding-left: 10rem;
+    padding-left: 6rem;
     background-color: #fff;
   }
   .nav__dropDown {
@@ -2388,7 +2388,7 @@ input:focus:-khtml-autofill {
     padding-left: 4rem;
   }
   .nav__cta-link {
-    width: 15rem;
+    width: 17rem;
   }
 }
 @media screen and (max-width: 500px) {
