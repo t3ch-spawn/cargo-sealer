@@ -123,13 +123,16 @@
 
     &__button {
       position: absolute;
-      top: 3rem;
-      right: 3rem;
+      top: 0.5rem;
+      right: 1rem;
       z-index: 22;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      background-color: transparent;
+      height: 5rem;
+      width: 5rem;
     }
 
     // FUNCTIONALITY OF HAMBURGER MENU

@@ -33,6 +33,15 @@
   width: 100%;
   z-index: 25;
 
+  &__line {
+    background-color: $footer-text-gray;
+    height: 1px;
+    width: 200%;
+    position: relative;
+    left: -10rem;
+    margin-top: 1rem;
+  }
+
   &__icon--mobile {
     display: none;
   }
@@ -70,6 +79,10 @@
     img {
       transition: 0.3s ease;
       margin-left: 0.5rem;
+
+      @media screen and(max-width: 800px) {
+        display: none;
+      }
     }
 
     img.active {
@@ -136,15 +149,36 @@
     transition: 0.7s $ease-back;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 0;
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      padding-left: 2rem;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    &__title {
+      color: $primary-dark-gray;
+      font-weight: 600;
+    }
+
+    &__para {
+      color: $footer-text-gray;
+    }
   }
 
   &__dropDown.active {
     opacity: 1;
     pointer-events: all;
-    min-height: 15rem;
+    min-height: 18rem;
   }
 }
 
@@ -171,12 +205,13 @@
     margin-right: 1rem;
   }
 
-  a {
+  &__link {
     text-decoration: none;
   }
 
   &__title {
     color: $primary-dark-gray;
+    font-weight: 600;
   }
 
   &__para {

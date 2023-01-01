@@ -29,18 +29,21 @@ function Navbar({ ctaWord }) {
     });
   };
 
+  // component helping to build nav
   function NavBoxHelper({ link, para, title, icon }) {
     return (
-      <div className="nav-helper">
+      <Link
+        className="nav-helper nav-helper__link"
+        onClick={handleLinks}
+        to={link}
+      >
         <img src={icon} alt="" />
 
-        <Link to={link} className="nav-helper__link" onClick={handleLinks}>
-          <span className="nav-helper__link-container">
-            <p className="nav-helper__title">{title}</p>
-            <p className="nav-helper__para">{para}</p>
-          </span>
-        </Link>
-      </div>
+        <span className="nav-helper__link-container">
+          <p className="nav-helper__title">{title}</p>
+          <p className="nav-helper__para">{para}</p>
+        </span>
+      </Link>
     );
   }
 
@@ -252,8 +255,9 @@ function Navbar({ ctaWord }) {
       {/* ////////////////////////////////////// */}
       <div className="nav__dropDown" id="dropdown1">
         <div className="nav__dropDown__heading">
-          <h3 className="nav__dropDown__title"></h3>
-          <p className="nav__dropDown__para"></p>
+          <h3 className="nav__dropDown__title">Partner</h3>
+          <p className="nav__dropDown__para">Join our working ecosystem</p>
+          <hr className="nav__line" />
         </div>
 
         <div className="nav-helper__container">
@@ -276,8 +280,9 @@ function Navbar({ ctaWord }) {
       {/* //////////////////////////// */}
       <div className="nav__dropDown" id="dropdown2">
         <div className="nav__dropDown__heading">
-          <h3 className="nav__dropDown__title"></h3>
-          <p className="nav__dropDown__para"></p>
+          <h3 className="nav__dropDown__title">Products</h3>
+          <p className="nav__dropDown__para">What we provide as a company</p>
+          <hr className="nav__line" />
         </div>
 
         <div className="nav-helper__container">
@@ -290,6 +295,7 @@ function Navbar({ ctaWord }) {
             icon={NavCart}
             title="Shop"
             para="Shop any products in the Marketplace."
+            link="/shop"
           />
           <NavBoxHelper
             icon={NavAddress}
@@ -302,8 +308,9 @@ function Navbar({ ctaWord }) {
       {/* ///////////////////////////// */}
       <div className="nav__dropDown" id="dropdown3">
         <div className="nav__dropDown__heading">
-          <h3 className="nav__dropDown__title"></h3>
-          <p className="nav__dropDown__para"></p>
+          <h3 className="nav__dropDown__title">Company</h3>
+          <p className="nav__dropDown__para">Get to know about us</p>
+          <hr className="nav__line" />
         </div>
 
         <div className="nav-helper__container">
@@ -311,11 +318,13 @@ function Navbar({ ctaWord }) {
             icon={NavFlag}
             title="About Us"
             para="Learn about our story and our mission statement."
+            link="/about"
           />
           <NavBoxHelper
             icon={NavGear}
             title="Our Services"
             para="Find out about what we provide as a company."
+            link="/services"
           />
           <NavBoxHelper
             icon={NavNews}
@@ -333,8 +342,11 @@ function Navbar({ ctaWord }) {
       {/* //////////////////////// */}
       <div className="nav__dropDown" id="dropdown4">
         <div className="nav__dropDown__heading">
-          <h3 className="nav__dropDown__title"></h3>
-          <p className="nav__dropDown__para"></p>
+          <h3 className="nav__dropDown__title">Support</h3>
+          <p className="nav__dropDown__para">
+            Have questions or want to get in touch?
+          </p>
+          <hr className="nav__line" />
         </div>
 
         <div className="nav-helper__container">
@@ -347,16 +359,19 @@ function Navbar({ ctaWord }) {
             icon={NavDealer}
             title="Dealers"
             para="Do you have questions about making deliveres?"
+            link="/dealer"
           />
           <NavBoxHelper
             icon={NavVendor}
             title="Vendors"
             para="Do you have questions about selling your items?"
+            link="/vendor"
           />
           <NavBoxHelper
             icon={NavContact}
             title="Contact Us"
             para="Want to get in touch?"
+            link="contact"
           />
         </div>
       </div>
