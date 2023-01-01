@@ -9,6 +9,7 @@ import Shop from "./components/Shop/Shop";
 import Services from "./components/Services/Services";
 import About from "./components/About/About_index";
 import DownloadPage from "./components/DownloadPage/DownloadPage";
+import Contact from "./components/Contact/ContactIndex";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/shop" element={<Shop />} />
         <Route path="/services" element={<Services />} />
         <Route path="/downloadpage" element={<DownloadPage />} />
+        <Route path="/contact" element={<Contact />} />
         <Route />
       </Routes>
     </Router>

@@ -1,0 +1,160 @@
+.contact {
+  position: relative;
+  background-color: $btn-text-white;
+  @include sectionSpacing;
+  display: flex;
+  margin-top: -18rem !important;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 15rem;
+  @include mediacheck;
+  z-index: 6;
+
+  & > *:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  &__heading {
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: $fs-medium;
+    font-family: "Raleway";
+    margin-bottom: 1.5rem;
+  }
+  &__para {
+    color: $nav-gray;
+    font-size: $fs-normal;
+    font-weight: 400;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    // styling form layout
+    &-top {
+      display: flex;
+      width: 100%;
+      margin-bottom: 3rem;
+
+      & > *:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    // styling input group
+    &-input-group {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-top: 2rem;
+      width: 100% !important;
+    }
+
+    &-input {
+      width: 100%;
+      background: $btn-text-white;
+      height: 3.5rem;
+      padding: 0 2rem;
+      border: 2px solid #e8e9e8;
+      border-radius: 0.5rem;
+      font-family: "Poppins";
+
+      &--long {
+        height: 8rem;
+        padding: 1rem;
+      }
+
+      &:focus {
+        outline: none;
+        // border: none;
+      }
+    }
+
+    &-label {
+      position: absolute;
+      top: -1.8rem;
+      color: $primary-dark-gray;
+      font-weight: 600;
+      font-style: 0.9rem;
+      left: 0.5rem;
+    }
+
+    // styling submit button
+    @include green-btn;
+    &__cta-link {
+      border: none;
+      margin-top: 2rem;
+      cursor: pointer;
+      height: 3rem;
+      font-size: $fs-normal;
+    }
+  }
+
+  &__imgContainer {
+    max-width: 28rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // QUERIES
+  @media screen and (max-width: 800px) {
+    padding-top: 22rem;
+    flex-direction: column-reverse;
+
+    & > *:not(:last-child) {
+      margin-right: 0rem;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__para {
+      text-align: center;
+    }
+
+    &__imgContainer {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    &__form {
+      &-top {
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        & > *:not(:last-child) {
+          margin-right: 0rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
+
+// error message
+.error-msg {
+  margin-left: auto;
+  margin-right: 45px;
+  margin-top: 5px;
+  font-size: $fs-small;
+  display: none;
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.error-msg.active {
+  display: block;
+}
