@@ -156,12 +156,15 @@
   &__container {
     display: grid;
     place-items: center;
-    justify-items: center;
-    align-content: center;
+    justify-items: start;
+    align-content: start;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-auto-rows: 1fr;
     grid-gap: 1.5rem;
     width: 80%;
+
+    @media screen and (max-width) {
+    }
   }
 
   img {

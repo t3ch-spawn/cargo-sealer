@@ -65,6 +65,12 @@
 
     &__dropDown {
       z-index: 24;
+      height: 0px;
+
+      &.active {
+        height: 350px;
+        padding: 2rem;
+      }
     }
 
     // putting in new icon
@@ -119,7 +125,7 @@
       position: absolute;
       top: 3rem;
       right: 3rem;
-      z-index: 30;
+      z-index: 22;
       display: flex;
       justify-content: center;
       align-items: center;
