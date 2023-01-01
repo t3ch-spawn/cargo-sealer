@@ -65,6 +65,7 @@
       padding: 0 2rem;
       border: 2px solid #e8e9e8;
       border-radius: 0.5rem;
+      color: $primary-dark-gray;
       font-family: "Poppins";
 
       &--long {
@@ -103,6 +104,37 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  // STYLING DETAILS SECTION (WITH ICONS)
+  &__details {
+    margin-top: 3rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &-item-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      & > *:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      span {
+        font-size: 1.1rem;
+        color: $primary-dark-gray;
+        & > *:not(:last-child) {
+          margin-bottom: 0.35rem;
+        }
+      }
+    }
+
+    &-item-1 {
+      font-weight: 600;
     }
   }
 

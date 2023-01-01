@@ -18,6 +18,49 @@ html {
   scroll-behavior: smooth;
 }
 
+/* BLUE BACKGROUND FIX */
+/* //////////////////// */
+/* //////////////////// */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #1d221b;
+  -webkit-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:focus:-webkit-autofill {
+  -webkit-text-fill-color: #1d221b;
+  -webkit-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:-moz-autofill {
+  -moz-text-fill-color: #1d221b;
+  -moz-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:focus:-moz-autofill {
+  -moz-text-fill-color: #1d221b;
+  -moz-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:-o-autofill {
+  -o-text-fill-color: #1d221b;
+  -o-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:focus:-o-autofill {
+  -o-text-fill-color: #1d221b;
+  -o-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:-khtml-autofill {
+  -khtml-text-fill-color: #1d221b;
+  -khtml-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
+input:focus:-khtml-autofill {
+  -khtml-text-fill-color: #1d221b;
+  -khtml-box-shadow: 0 0 0px 1000px #fcfdfc inset;
+}
+
 .appInstall {
   display: flex;
   justify-content: center;
@@ -1790,6 +1833,7 @@ html {
   padding: 0 2rem;
   border: 2px solid #e8e9e8;
   border-radius: 0.5rem;
+  color: #1d221b;
   font-family: "Poppins";
 }
 .contact__form-input--long {
@@ -1838,6 +1882,30 @@ html {
 }
 .contact__imgContainer img {
   width: 100%;
+}
+.contact__details {
+  margin-top: 3rem;
+}
+.contact__details > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.contact__details-item-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact__details-item-container > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.contact__details-item-container span {
+  font-size: 1.1rem;
+  color: #1d221b;
+}
+.contact__details-item-container span > *:not(:last-child) {
+  margin-bottom: 0.35rem;
+}
+.contact__details-item-1 {
+  font-weight: 600;
 }
 @media screen and (max-width: 800px) {
   .contact {

@@ -22,3 +22,39 @@ html {
   font-size: calc(65.2% + 0.390625vw);
   scroll-behavior: smooth;
 }
+
+/* BLUE BACKGROUND FIX */
+/* //////////////////// */
+/* //////////////////// */
+input:-webkit-autofill {
+  -webkit-text-fill-color: $primary-dark-gray;
+  -webkit-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:focus:-webkit-autofill {
+  -webkit-text-fill-color: $primary-dark-gray;
+  -webkit-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:-moz-autofill {
+  -moz-text-fill-color: $primary-dark-gray;
+  -moz-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:focus:-moz-autofill {
+  -moz-text-fill-color: $primary-dark-gray;
+  -moz-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:-o-autofill {
+  -o-text-fill-color: $primary-dark-gray;
+  -o-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:focus:-o-autofill {
+  -o-text-fill-color: $primary-dark-gray;
+  -o-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:-khtml-autofill {
+  -khtml-text-fill-color: $primary-dark-gray;
+  -khtml-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
+input:focus:-khtml-autofill {
+  -khtml-text-fill-color: $primary-dark-gray;
+  -khtml-box-shadow: 0 0 0px 1000px $btn-text-white inset;
+}
