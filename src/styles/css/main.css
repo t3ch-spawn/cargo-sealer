@@ -581,6 +581,7 @@ input:focus:-khtml-autofill {
   color: #4a4e49;
   transition: 0.2s ease;
   position: relative;
+  font-size: 1.2rem;
 }
 .nav__link::after {
   content: "";
@@ -2088,14 +2089,14 @@ input:focus:-khtml-autofill {
     align-items: flex-start;
   }
   .nav__list > *:not(:last-child) {
-    margin-bottom: 3.7rem;
+    margin-bottom: 2.5rem;
     margin-right: 0rem;
   }
   .nav__item {
     overflow: hidden;
   }
   .nav__link, .nav__item img {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     transform: translateY(3rem);
     transition: all 0.7s ease !important;
   }
@@ -2107,7 +2108,7 @@ input:focus:-khtml-autofill {
     pointer-events: none;
   }
   .nav__cta-link {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     width: 20rem;
   }
   .nav__button {

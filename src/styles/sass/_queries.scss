@@ -91,7 +91,7 @@
 
       // spacing list items
       & > *:not(:last-child) {
-        margin-bottom: 3.7rem;
+        margin-bottom: 2.5rem;
         margin-right: 0rem;
       }
     }
@@ -102,7 +102,7 @@
 
     &__link,
     &__item img {
-      font-size: $fs-normal;
+      font-size: 1.6rem;
       transform: translateY(3rem);
       transition: all 0.7s ease !important;
     }
@@ -116,7 +116,7 @@
     }
 
     &__cta-link {
-      font-size: $fs-normal;
+      font-size: 1.6rem;
       width: 20rem;
     }
 
