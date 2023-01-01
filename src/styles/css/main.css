@@ -616,10 +616,15 @@ input:focus:-khtml-autofill {
   transition: 0.7s cubic-bezier(0.41, 1.8, 0.55, 1);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
   padding-top: 2.5rem;
+}
+@media screen and (max-width: 500px) {
+  .nav__dropDown {
+    padding-bottom: 1rem;
+  }
 }
 .nav__dropDown__heading {
   display: flex;
@@ -641,7 +646,7 @@ input:focus:-khtml-autofill {
 .nav__dropDown.active {
   opacity: 1;
   pointer-events: all;
-  min-height: 20rem;
+  min-height: 23rem;
 }
 
 .nav-helper {
@@ -2075,18 +2080,26 @@ input:focus:-khtml-autofill {
     z-index: 24;
     height: 0px;
   }
+}
+@media screen and (max-width: 800px) and (max-width: 700px) {
   .nav__dropDown.active {
     height: 370px;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__icon--mobile {
     display: inline-block;
     position: relative;
     z-index: 30;
     height: 3.5rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__icon {
     display: none;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__list {
     flex-direction: column;
     align-items: flex-start;
@@ -2095,18 +2108,26 @@ input:focus:-khtml-autofill {
     margin-bottom: 2.5rem;
     margin-right: 0rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__item {
     overflow: hidden;
     padding-bottom: 5px;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__link, .nav__item img {
     font-size: 1.6rem;
     transform: translateY(3rem);
     transition: all 0.7s ease !important;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__link::after {
     bottom: -3px;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__cta {
     margin-top: 4rem;
     transform: translateX(-15rem);
@@ -2114,10 +2135,14 @@ input:focus:-khtml-autofill {
     opacity: 0;
     pointer-events: none;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__cta-link {
     font-size: 1.6rem;
     width: 20rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__button {
     position: absolute;
     top: 0.5rem;
@@ -2131,21 +2156,29 @@ input:focus:-khtml-autofill {
     height: 5rem;
     width: 5rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__checkbox:checked ~ .nav {
     opacity: 1;
     pointer-events: all;
     width: 100%;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__checkbox:checked ~ .nav .nav__link, .nav__checkbox:checked ~ .nav .nav__item img {
     transform: translateY(0rem);
     transition-delay: 0.5s !important;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__checkbox:checked ~ .nav .nav__cta {
     transform: translateX(0rem);
     transition-delay: 1.1s !important;
     opacity: 1;
     pointer-events: all;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__burger {
     position: relative;
   }
@@ -2166,12 +2199,18 @@ input:focus:-khtml-autofill {
   .nav__burger::after {
     top: 0.8rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__button:hover .nav__burger::before {
     top: -1rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__button:hover .nav__burger::after {
     top: 1rem;
   }
+}
+@media screen and (max-width: 800px) {
   .nav__checkbox:checked ~ .nav__button .nav__burger {
     background-color: transparent;
   }
@@ -2183,6 +2222,8 @@ input:focus:-khtml-autofill {
     transform: rotate(-135deg);
     top: 0;
   }
+}
+@media screen and (max-width: 800px) {
   .section {
     flex-direction: column;
   }
@@ -2229,6 +2270,8 @@ input:focus:-khtml-autofill {
     margin-right: 0rem;
     margin-bottom: 1rem;
   }
+}
+@media screen and (max-width: 800px) {
   .appInstall {
     flex-direction: column-reverse;
   }
@@ -2245,6 +2288,8 @@ input:focus:-khtml-autofill {
   .appInstall__para {
     text-align: center;
   }
+}
+@media screen and (max-width: 800px) {
   .servicesMain {
     flex-direction: column;
   }
@@ -2265,9 +2310,13 @@ input:focus:-khtml-autofill {
   .servicesMain__cta-link {
     width: 100%;
   }
+}
+@media screen and (max-width: 800px) {
   .service-bottom__row {
     flex-direction: column-reverse;
   }
+}
+@media screen and (max-width: 800px) {
   .bottom-helper {
     text-align: center;
   }
@@ -2277,6 +2326,8 @@ input:focus:-khtml-autofill {
   .bottom-helper__container > *:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+@media screen and (max-width: 800px) {
   .footer {
     flex-direction: column;
   }
