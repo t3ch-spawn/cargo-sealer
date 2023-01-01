@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DeliveryBro1 from "../../images/Delivery-address-bro-1.png";
 import InNoTimeBro1 from "../../images/In-no-time-bro-1.png";
 import Clock from "../../images/clock.svg";
@@ -43,6 +44,8 @@ function BodyHelper({
   itempara3,
   btninfo1,
   btninfo2,
+  link1,
+  link2,
 }) {
   return (
     <div className={className} style={zIndex}>
@@ -72,12 +75,12 @@ function BodyHelper({
         </div>
 
         <div className="section__btnContainer">
-          <a href="#" className="section__btn section__btn--1">
+          <Link to={link1} className="section__btn section__btn--1">
             <p> {btninfo1}</p>
-          </a>
-          <a href="#" className="section__btn section__btn--2">
+          </Link>
+          <Link to={link2} className="section__btn section__btn--2">
             <p> {btninfo2}</p>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -102,6 +105,7 @@ function HomeBody() {
         itempara2={itemTypo2}
         itempara3={itemTypo3}
         btninfo1="Become a Dealer"
+        link1="/dealer"
       />
       <BodyHelper
         className="section section__reverse"
@@ -117,8 +121,10 @@ function HomeBody() {
         itempara1={itemTypo4}
         itempara2={itemTypo5}
         itempara3={itemTypo6}
-        btninfo1="Become a Dealer"
+        btninfo1="Become a Vendor"
         btninfo2="Shop Now"
+        link1="/vendor"
+        link2="/shop"
       />
     </div>
   );

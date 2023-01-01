@@ -371,7 +371,7 @@ function Navbar({ ctaWord }) {
             icon={NavContact}
             title="Contact Us"
             para="Want to get in touch?"
-            link="contact"
+            link="/contact"
           />
         </div>
       </div>

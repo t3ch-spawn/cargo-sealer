@@ -125,7 +125,7 @@ input:focus:-khtml-autofill {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  width: 45%;
+  width: 47%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,6 +152,9 @@ input:focus:-khtml-autofill {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+.appInstall__btn span p {
+  text-align: center;
 }
 .appInstall__p-top {
   font-weight: 400;
@@ -2094,11 +2097,15 @@ input:focus:-khtml-autofill {
   }
   .nav__item {
     overflow: hidden;
+    padding-bottom: 5px;
   }
   .nav__link, .nav__item img {
     font-size: 1.6rem;
     transform: translateY(3rem);
     transition: all 0.7s ease !important;
+  }
+  .nav__link::after {
+    bottom: -3px;
   }
   .nav__cta {
     margin-top: 4rem;

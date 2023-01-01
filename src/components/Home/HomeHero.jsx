@@ -1,5 +1,6 @@
 import React from "react";
 import AddressBro1 from "../../images/Address-bro-1.png";
+import { Link } from "react-router-dom";
 
 function HomeHero() {
   return (
@@ -10,12 +11,12 @@ function HomeHero() {
         button, Get a pick up in minutes. Don't Stress!
       </p>
       <div className="home-hero__btnContainer">
-        <a href="" className="home-hero__btn home-hero__btn--1">
+        <Link to="/pickup" className="home-hero__btn home-hero__btn--1">
           Request Pickup
-        </a>
-        <a href="" className="home-hero__btn home-hero__btn--2">
+        </Link>
+        <Link to="/dealer" className="home-hero__btn home-hero__btn--2">
           Become a Dealer
-        </a>
+        </Link>
       </div>
 
       <div className="home-hero__img">

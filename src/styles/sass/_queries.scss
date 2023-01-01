@@ -98,6 +98,7 @@
 
     &__item {
       overflow: hidden;
+      padding-bottom: 5px;
     }
 
     &__link,
@@ -105,6 +106,10 @@
       font-size: 1.6rem;
       transform: translateY(3rem);
       transition: all 0.7s ease !important;
+    }
+
+    &__link::after {
+      bottom: -3px;
     }
 
     &__cta {
