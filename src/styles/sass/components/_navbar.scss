@@ -36,9 +36,9 @@
   &__line {
     background-color: $footer-text-gray;
     height: 1px;
-    width: 200%;
+    width: 100%;
     position: relative;
-    left: -10rem;
+    left: 0rem;
     margin-top: 1rem;
   }
 
@@ -150,14 +150,17 @@
     transition: 0.7s $ease-back;
     display: flex;
     flex-direction: column;
-    // place-items: center;
+    padding-top: 1.5rem;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
-    padding-top: 2.5rem;
+
+    @media screen and (max-width: 650px) {
+      padding-top: 2.5rem;
+    }
 
     @media screen and (max-width: 500px) {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
 
     &__heading {
@@ -165,19 +168,20 @@
       flex-direction: column;
       width: 100%;
       align-items: flex-start;
-      padding-left: 2rem;
       margin-top: -1rem;
+      position: relative;
       margin-bottom: 1rem;
-      overflow: hidden;
     }
 
     &__title {
       color: $primary-dark-gray;
       font-weight: 600;
+      padding-left: 2rem;
     }
 
     &__para {
       color: $footer-text-gray;
+      padding-left: 2rem;
     }
   }
 

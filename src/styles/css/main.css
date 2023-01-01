@@ -515,9 +515,9 @@ input:focus:-khtml-autofill {
 .nav__line {
   background-color: #a5a7a4;
   height: 1px;
-  width: 200%;
+  width: 100%;
   position: relative;
-  left: -10rem;
+  left: 0rem;
   margin-top: 1rem;
 }
 .nav__icon--mobile {
@@ -616,14 +616,19 @@ input:focus:-khtml-autofill {
   transition: 0.7s cubic-bezier(0.41, 1.8, 0.55, 1);
   display: flex;
   flex-direction: column;
+  padding-top: 1.5rem;
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
-  padding-top: 2.5rem;
+}
+@media screen and (max-width: 650px) {
+  .nav__dropDown {
+    padding-top: 2.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .nav__dropDown {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 .nav__dropDown__heading {
@@ -631,17 +636,18 @@ input:focus:-khtml-autofill {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
-  padding-left: 2rem;
   margin-top: -1rem;
+  position: relative;
   margin-bottom: 1rem;
-  overflow: hidden;
 }
 .nav__dropDown__title {
   color: #1d221b;
   font-weight: 600;
+  padding-left: 2rem;
 }
 .nav__dropDown__para {
   color: #a5a7a4;
+  padding-left: 2rem;
 }
 .nav__dropDown.active {
   opacity: 1;
