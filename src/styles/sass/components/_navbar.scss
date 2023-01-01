@@ -3,7 +3,7 @@
   z-index: 15;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 2000%;
   top: 0;
   left: 0;
   display: none;
@@ -123,27 +123,60 @@
   // styling of drop downs of nav items
   &__dropDown {
     position: fixed;
-    background-color: black;
+    background-color: white;
     color: white;
     width: 100%;
     height: 0rem;
+    min-height: 0rem;
     z-index: 18;
     top: 5.9rem;
     left: 0;
     opacity: 0;
     pointer-events: none;
     transition: 0.7s $ease-back;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
   }
 
   &__dropDown.active {
     opacity: 1;
     pointer-events: all;
-    height: 20rem;
+    min-height: 15rem;
+  }
+}
+
+// styling for small boxes in nav
+.nav-helper {
+  display: flex;
+  max-width: 20rem;
+
+  &__container {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1.5rem;
+    width: 80%;
   }
 
-  // // drop down animation
-  // &__item:hover ~ &__dropDown {
-  //   height: 20rem;
-  //   bottom: 0;
-  // }
+  img {
+    margin-right: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__title {
+    color: $primary-dark-gray;
+  }
+
+  &__para {
+    color: $footer-text-gray;
+  }
 }

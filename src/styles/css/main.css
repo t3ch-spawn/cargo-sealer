@@ -479,7 +479,7 @@ input:focus:-khtml-autofill {
   z-index: 15;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 2000%;
   top: 0;
   left: 0;
   display: none;
@@ -586,21 +586,54 @@ input:focus:-khtml-autofill {
 }
 .nav__dropDown {
   position: fixed;
-  background-color: black;
+  background-color: white;
   color: white;
   width: 100%;
   height: 0rem;
+  min-height: 0rem;
   z-index: 18;
   top: 5.9rem;
   left: 0;
   opacity: 0;
   pointer-events: none;
   transition: 0.7s cubic-bezier(0.41, 1.8, 0.55, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
 }
 .nav__dropDown.active {
   opacity: 1;
   pointer-events: all;
-  height: 20rem;
+  min-height: 15rem;
+}
+
+.nav-helper {
+  display: flex;
+  max-width: 20rem;
+}
+.nav-helper__container {
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 1.5rem;
+  width: 80%;
+}
+.nav-helper img {
+  margin-right: 1rem;
+}
+.nav-helper a {
+  text-decoration: none;
+}
+.nav-helper__title {
+  color: #1d221b;
+}
+.nav-helper__para {
+  color: #a5a7a4;
 }
 
 .footer {
@@ -1982,13 +2015,16 @@ input:focus:-khtml-autofill {
     -moz-backdrop-filter: blur(28px);
     height: 6rem;
   }
+  .overlay {
+    z-index: 23;
+  }
   .nav {
     height: 100vh;
     width: 0%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 25;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1998,6 +2034,9 @@ input:focus:-khtml-autofill {
     transition: all 0.8s ease;
     padding-left: 10rem;
     background-color: #fff;
+  }
+  .nav__dropDown {
+    z-index: 24;
   }
   .nav__icon--mobile {
     display: inline-block;

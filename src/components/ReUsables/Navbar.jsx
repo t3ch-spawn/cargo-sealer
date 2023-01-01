@@ -2,8 +2,48 @@ import React from "react";
 import NavIcon from "../../images/Cargo-Dealer-Logo.svg";
 import Arrow from "../../images/arrow.svg";
 import { Link } from "react-router-dom";
+import NavBox from "../../images/nav-box.svg";
+import NavAddress from "../../images/nav-address.svg";
+import NavCart from "../../images/nav-cart.svg";
+import NavNews from "../../images/nav-news.svg";
+import NavFlag from "../../images/nav-flag.svg";
+import NavGear from "../../images/nav-gear.svg";
+import Nav2Users from "../../images/nav-2-users.svg";
+import Nav1User from "../../images/nav-1-user.svg";
+import NavDealer from "../../images/nav-dealer.svg";
+import NavVendor from "../../images/nav-vendor.svg";
+import NavContact from "../../images/nav-contact.svg";
 
 function Navbar({ ctaWord }) {
+  const handleLinks = () => {
+    const dropDowns = document.querySelectorAll(".nav__dropDown");
+    const arrows = document.querySelectorAll(".nav__arrow");
+    const overlay = document.querySelector(".overlay");
+    overlay.classList.remove("active");
+
+    dropDowns.forEach((drop) => {
+      drop.classList.remove("active");
+    });
+    arrows.forEach((drop) => {
+      drop.classList.remove("active");
+    });
+  };
+
+  function NavBoxHelper({ link, para, title, icon }) {
+    return (
+      <div className="nav-helper">
+        <img src={icon} alt="" />
+
+        <Link to={link} className="nav-helper__link" onClick={handleLinks}>
+          <span className="nav-helper__link-container">
+            <p className="nav-helper__title">{title}</p>
+            <p className="nav-helper__para">{para}</p>
+          </span>
+        </Link>
+      </div>
+    );
+  }
+
   const handleOverlay = () => {
     const dropDowns = document.querySelectorAll(".nav__dropDown");
     const arrows = document.querySelectorAll(".nav__arrow");
@@ -208,18 +248,117 @@ function Navbar({ ctaWord }) {
         </div>
       </nav>
 
+      {/* DROP DOWN SECTION */}
+      {/* ////////////////////////////////////// */}
       <div className="nav__dropDown" id="dropdown1">
-        I AM 1
+        <div className="nav__dropDown__heading">
+          <h3 className="nav__dropDown__title"></h3>
+          <p className="nav__dropDown__para"></p>
+        </div>
+
+        <div className="nav-helper__container">
+          <NavBoxHelper
+            icon={NavDealer}
+            title="Dealer"
+            para="Start earning money driving for us."
+            functionName={handleLinks}
+            link="/dealer"
+          />
+          <NavBoxHelper
+            icon={NavVendor}
+            title="Vendor"
+            para="Sell your products on our Marketplace."
+            link="/vendor"
+          />
+        </div>
       </div>
+
+      {/* //////////////////////////// */}
       <div className="nav__dropDown" id="dropdown2">
-        I AM 2
+        <div className="nav__dropDown__heading">
+          <h3 className="nav__dropDown__title"></h3>
+          <p className="nav__dropDown__para"></p>
+        </div>
+
+        <div className="nav-helper__container">
+          <NavBoxHelper
+            icon={NavBox}
+            title="Ship"
+            para="Request a pickup in minutes."
+          />
+          <NavBoxHelper
+            icon={NavCart}
+            title="Shop"
+            para="Shop any products in the Marketplace."
+          />
+          <NavBoxHelper
+            icon={NavAddress}
+            title="Freight"
+            para="Here for the long run? Move everything."
+          />
+        </div>
       </div>
+
+      {/* ///////////////////////////// */}
       <div className="nav__dropDown" id="dropdown3">
-        {" "}
-        I AM 3
+        <div className="nav__dropDown__heading">
+          <h3 className="nav__dropDown__title"></h3>
+          <p className="nav__dropDown__para"></p>
+        </div>
+
+        <div className="nav-helper__container">
+          <NavBoxHelper
+            icon={NavFlag}
+            title="About Us"
+            para="Learn about our story and our mission statement."
+          />
+          <NavBoxHelper
+            icon={NavGear}
+            title="Our Services"
+            para="Find out about what we provide as a company."
+          />
+          <NavBoxHelper
+            icon={NavNews}
+            title="News"
+            para="News and writings, press releases, and resources."
+          />
+          <NavBoxHelper
+            icon={Nav2Users}
+            title="Careers"
+            para="We’re always looking for talented people. Join us!"
+          />
+        </div>
       </div>
+
+      {/* //////////////////////// */}
       <div className="nav__dropDown" id="dropdown4">
-        I AM 4
+        <div className="nav__dropDown__heading">
+          <h3 className="nav__dropDown__title"></h3>
+          <p className="nav__dropDown__para"></p>
+        </div>
+
+        <div className="nav-helper__container">
+          <NavBoxHelper
+            icon={Nav1User}
+            title="Users"
+            para="Do you have questions about requesting pickups?"
+          />
+          <NavBoxHelper
+            icon={NavDealer}
+            title="Dealers"
+            para="Do you have questions about making deliveres?"
+          />
+          <NavBoxHelper
+            icon={NavVendor}
+            title="Vendors"
+            para="Do you have questions about selling your items?"
+          />
+          <NavBoxHelper
+            icon={NavContact}
+            title="Contact Us"
+            para="Want to get in touch?"
+          />
+        </div>
       </div>
     </div>
   );
