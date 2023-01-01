@@ -616,10 +616,10 @@ input:focus:-khtml-autofill {
   transition: 0.7s cubic-bezier(0.41, 1.8, 0.55, 1);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
-  padding: 1.5rem 0;
+  padding-top: 2.5rem;
 }
 .nav__dropDown__heading {
   display: flex;
@@ -641,7 +641,7 @@ input:focus:-khtml-autofill {
 .nav__dropDown.active {
   opacity: 1;
   pointer-events: all;
-  min-height: 18rem;
+  min-height: 20rem;
 }
 
 .nav-helper {
@@ -2076,7 +2076,7 @@ input:focus:-khtml-autofill {
     height: 0px;
   }
   .nav__dropDown.active {
-    height: 380px;
+    height: 370px;
   }
   .nav__icon--mobile {
     display: inline-block;

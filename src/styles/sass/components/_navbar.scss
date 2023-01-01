@@ -150,10 +150,10 @@
     transition: 0.7s $ease-back;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
-    padding: 1.5rem 0;
+    padding-top: 2.5rem;
 
     &__heading {
       display: flex;
@@ -179,7 +179,7 @@
   &__dropDown.active {
     opacity: 1;
     pointer-events: all;
-    min-height: 18rem;
+    min-height: 20rem;
   }
 }
 
