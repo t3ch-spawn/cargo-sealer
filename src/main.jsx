@@ -10,10 +10,12 @@ import Services from "./components/Services/Services";
 import About from "./components/About/About_index";
 import DownloadPage from "./components/DownloadPage/DownloadPage";
 import Contact from "./components/Contact/ContactIndex";
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
