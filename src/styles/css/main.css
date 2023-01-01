@@ -2076,7 +2076,7 @@ input:focus:-khtml-autofill {
     height: 0px;
   }
   .nav__dropDown.active {
-    height: 370px;
+    height: 380px;
   }
   .nav__icon--mobile {
     display: inline-block;
