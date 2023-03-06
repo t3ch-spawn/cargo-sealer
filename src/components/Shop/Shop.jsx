@@ -10,7 +10,7 @@ import Ecommerce from "../../images/Ecommerce.png";
 
 function Shop() {
   return (
-    <div>
+    <div data-scroll-section>
       <Navbar ctaWord="Request Pickup" />
       <Download2
         bgc={{ zIndex: 5 }}

@@ -10,7 +10,7 @@ import Catalogue from "../../images/Catalogue-bro.png";
 
 function Vendor() {
   return (
-    <div>
+    <div data-scroll-section>
       <Navbar ctaWord="Request Pickup" />
       <Download2
         bgc={{ zIndex: 5 }}

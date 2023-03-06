@@ -10,7 +10,7 @@ import Corona from "../../images/Corona.png";
 
 function Pickup() {
   return (
-    <div>
+    <div data-scroll-section>
       <Navbar ctaWord="Request Pickup" />
       <Download2
         img={Corona}

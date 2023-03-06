@@ -9,7 +9,7 @@ import HomeBottom from "./HomeBottom";
 
 function index() {
   return (
-    <div className="home">
+    <div data-scroll-section className="home">
       <Navbar ctaWord="Get Started" />
       <HomeHero />
       <HomeBody />

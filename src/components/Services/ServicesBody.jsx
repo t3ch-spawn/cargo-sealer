@@ -1,11 +1,9 @@
 import React from "react";
-import Globe from "../../images/Globe.png";
 import FreeShipping from "../../images/Free-shipping.png";
 import Logistics from "../../images/Logistics.png";
 import NewEntries from "../../images/New-entries.png";
 import CheckingBoxes from "../../images/Checking-boxes.png";
 import ContainerShip from "../../images/Container-ship.png";
-import CurveNormal from "../../images/curve-normal.png";
 
 function ServicesHelper({ className, zIndex, sectionimg, title, para }) {
   return (

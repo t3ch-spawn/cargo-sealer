@@ -7,7 +7,7 @@ import ServicesBottom from "./ServicesBottom";
 
 function Services() {
   return (
-    <div>
+    <div data-scroll-section>
       <Navbar ctaWord="Request Pickup" />
       <ServicesHero />
       <ServicesBody />

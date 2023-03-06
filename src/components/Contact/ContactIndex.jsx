@@ -9,7 +9,7 @@ import ContactPhone from "../../images/contact-phone.svg";
 
 function ContactIndex() {
   return (
-    <>
+    <div data-scroll-section>
       <Navbar ctaWord="Request Pickup" />
       <div className="contact">
         <div className="contact__left">
@@ -59,7 +59,7 @@ function ContactIndex() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

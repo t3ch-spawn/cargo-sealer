@@ -10,7 +10,7 @@ import Ride from "../../images/Order-ride.png";
 
 function Dealer() {
   return (
-    <div>
+    <div data-scroll-section>
       <Navbar ctaWord="Request Pickup" />
       <Download2
         bgc={{ zIndex: 5 }}
