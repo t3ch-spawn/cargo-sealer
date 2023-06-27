@@ -2,11 +2,11 @@
 
 This is a website I was hired to build by a shipping company. 
 
-##Technologies
+## Technologies
 I built this using ReactJs and Sass
 
-##Note
+## Note
 The playstore redirects aren't functional yet, because the app isn't ready
 
-##Site link
+## Site link
 cargo-dealer-temp.netlify.app 
