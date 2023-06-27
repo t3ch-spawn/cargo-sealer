@@ -9,4 +9,4 @@ I built this using ReactJs and Sass
 The playstore redirects aren't functional yet, because the app isn't ready
 
 ## Site link
-cargo-dealer-temp.netlify.app 
+https://cargo-dealer-temp.netlify.app/
